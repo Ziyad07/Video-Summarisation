@@ -6,6 +6,8 @@ __pycache__/
 # C extensions
 *.so
 
+saved_numpy_arrays/
+
 # Distribution / packaging
 .Python
 build/

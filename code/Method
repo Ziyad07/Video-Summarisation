@@ -1,0 +1,24 @@
+We will be working with SumMe dataset here
+it consists of 25 videos 
+
+======== Features ========
+
+Get all c3d features for all videos using a stride of 16 frames(disregard last few frames)
+ - i.e. for each video it will be of size (partitions, 4096)
+
+======= Targets ==========
+
+Since each frame has a associated target I encode it to be:
+		 0 - if value for that frame is = 0.0
+		 1 - if value for that frame is > 0
+
+Now, to match it up with the 16frames extracted from c3d. I take a stride again of 16 in this target vector (per video)
+ - I take the sum of this sized 16 vector (Which remember, consists of 0's or 1's now)
+ - If the sum is >= 14 make the target 1 else make it 0
+ - This means that for these 16 frames we will have one target value relating to one feature vector extracted from c3d for the 16 frames
+
+====== Eval ===========
+
+use sklearn.metrics classification_report
+also used model.metric_names[1]
+

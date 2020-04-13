@@ -1,0 +1,18 @@
+Simple NN with c3d features using binary targets (coupled per 16 frames)
+Sigmoid avtivation output
+
+
+Results:
+
+Uncut_Evening_Flight
+F-measure : 0.182 at length 0.15
+Valparaiso_Downhill
+F-measure : 0.082 at length 0.15
+car_over_camera
+F-measure : 0.036 at length 0.15
+paluma_jump
+F-measure : 0.091 at length 0.16
+playing_ball
+F-measure : 0.135 at length 0.15
+
+average f1 = 10.52% 
