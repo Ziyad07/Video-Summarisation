@@ -11,4 +11,8 @@ The latent features from the auto encoder is taken and fed into a MLP to make fr
 
 The files 'AE_ConvRNN_I3D_features.py' in the 'Summe' and 'Tvsum50' folders perform the above process
 
-
+The code is applied on two benchmark datasets namely: Tvsum50 and Summe Datasets
+Model plots can be seen in the following folders:
+  code/TvSum50/Plots
+  code/Summe/Plots
+  
